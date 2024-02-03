@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text Styles</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        .input-text-styles {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"].rounded,
+        input[type="email"].rounded,
+        input[type="password"].rounded {
+            border-radius: 20px;
+        }
+
+        input[type="text"].highlight,
+        input[type="email"].highlight,
+        input[type="password"].highlight {
+            background-color: #ffffcc;
+        }
+
+        input[type="text"].borderless,
+        input[type="email"].borderless,
+        input[type="password"].borderless {
+            border: none;
+            border-bottom: 2px solid #333;
+            background-color: transparent;
+            outline: none;
+        }
+
+        .navigation {
+            margin-bottom: 20px;
+        }
+
+        .navigation a {
+            margin-right: 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="index.html">Back to Home</a>
+</div>
+
+<div class="input-text-styles">
+    <h2>Default Input Text</h2>
+    <label for="defaultInput">Default Input:</label>
+    <input type="text" id="defaultInput" name="defaultInput" placeholder="Enter text">
+
+    <h2>Rounded Input Text</h2>
+    <label for="roundedInput">Rounded Input:</label>
+    <input type="text" id="roundedInput" name="roundedInput" class="rounded" placeholder="Enter text">
+
+    <h2>Highlighted Input Text</h2>
+    <label for="highlightInput">Highlighted Input:</label>
+    <input type="text" id="highlightInput" name="highlightInput" class="highlight" placeholder="Enter text">
+
+    <h2>Borderless Input Text</h2>
+    <label for="borderlessInput">Borderless Input:</label>
+    <input type="text" id="borderlessInput" name="borderlessInput" class="borderless" placeholder="Enter text">
+</div>
+
+</body>
+</html>
